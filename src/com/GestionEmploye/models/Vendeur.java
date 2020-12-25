@@ -1,13 +1,14 @@
 package com.GestionEmploye.models;
 
-class Vendeur extends Employe {
+public class Vendeur extends Employe {
 	
     private final double POURCENTAGE = 0.2;
     private final int BONUS = 1500;
     
     private double chiffreAffaire;
 
-    public Vendeur(String prenom, String nom, int age, String date, double chiffreAffaire) 
+    public Vendeur() {}
+    public Vendeur(String prenom, String nom, int age, int date, double chiffreAffaire) 
     {
         super(prenom, nom, age, date);
         this.chiffreAffaire = chiffreAffaire;

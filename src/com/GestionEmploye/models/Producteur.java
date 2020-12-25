@@ -5,7 +5,7 @@ public class Producteur extends Employe{
 		private final int PRIX_UNIT = 5;
 	    private int nbrUnites;
 
-	    public Producteur(String prenom, String nom, int age, String date, int nbrUnites)
+	    public Producteur(String prenom, String nom, int age, int date, int nbrUnites)
 	    {
 	        super(prenom, nom, age, date);
 	        this.nbrUnites = nbrUnites;

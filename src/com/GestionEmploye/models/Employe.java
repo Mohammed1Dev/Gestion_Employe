@@ -6,10 +6,11 @@ public abstract class Employe {
     private String nom;
     private String prenom;
     private int age;
-    private String date;
+    private int date;
 
 
-    public Employe(String prenom, String nom, int age, String date) 
+    public Employe() {}
+    public Employe(String prenom, String nom, int age, int date) 
     {
         this.nom = nom;
         this.prenom = prenom;
@@ -34,7 +35,7 @@ public abstract class Employe {
 
     //age & date Getters & Setters
 	public int getAge() {
-		return age;
+		return this.age;
 	}
 
 	public void setAge(int age) 
@@ -42,12 +43,12 @@ public abstract class Employe {
 		this.age = age;
 	}
 
-	public String getDate() 
+	public int getDate() 
 	{
-		return date;
+		return this.date;
 	}
 
-	public void setDate(String date) 
+	public void setDate(int date) 
 	{
 		this.date = date;
 	}
