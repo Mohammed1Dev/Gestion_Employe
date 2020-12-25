@@ -2,8 +2,9 @@ package com.GestionEmploye.models;
 
 import com.GestionEmploye.interfaces.PrimeRisque;
 
-class ProducteurRisquee extends Producteur implements PrimeRisque {
+public class ProducteurRisquee extends Producteur implements PrimeRisque {
 
+	public ProducteurRisquee() {}
     public ProducteurRisquee(String prenom, String nom, int age, int date, int nbr_unite) 
     {
     	
@@ -14,4 +15,10 @@ class ProducteurRisquee extends Producteur implements PrimeRisque {
     {
         return super.calculeSalaire() + PRIME;
     }
+    
+    @Override
+    public String function()
+        {
+            return "Producteur-risqué =>";
+        }
 }

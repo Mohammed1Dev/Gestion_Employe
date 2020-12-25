@@ -5,6 +5,7 @@ public class Manutentionnaire extends Employe {
     private final double HEUR_PRICE = 50;
     private int nbrHeurs;
 
+    public Manutentionnaire() {}
     public Manutentionnaire(String prenom, String nom, int age, int date, int nbrHeurs) 
     {
         super(prenom, nom, age, date);

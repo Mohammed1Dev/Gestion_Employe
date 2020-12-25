@@ -5,6 +5,7 @@ public class Producteur extends Employe{
 		private final int PRIX_UNIT = 5;
 	    private int nbrUnites;
 
+	    public Producteur() {}
 	    public Producteur(String prenom, String nom, int age, int date, int nbrUnites)
 	    {
 	        super(prenom, nom, age, date);
@@ -21,6 +22,6 @@ public class Producteur extends Employe{
 	    @Override
 	    public String function()
 	        {
-	            return "Le Producteur =>";
+	            return "Producteur =>";
 	        }
 }
